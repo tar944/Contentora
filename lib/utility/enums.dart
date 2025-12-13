@@ -35,17 +35,13 @@ enum PartUnit{
   percent
 }
 
-enum VideoKind{
+enum MediaKind{
   none,
   movie,
   serial,
   documentary,
   learningCourse,
-  onlineVideo
-}
-
-enum AudioKind{
-  none,
+  onlineVideo,
   music,
   podcast
 }

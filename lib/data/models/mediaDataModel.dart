@@ -5,7 +5,7 @@ import 'package:contentora/utility/enums.dart';
 import 'package:objectbox/objectbox.dart';
 
 @Entity()
-class VideoDataModel {
+class MediaDataModel {
   @Id()
   int id = 0;
 
@@ -16,26 +16,27 @@ class VideoDataModel {
   String reviewLink = '';
 
   String state = ContentState.newAdded.name;
-  String kind = VideoKind.movie.name;
+  String kind = MediaKind.movie.name;
 
   int myStarCount = 0;
   int starCount = 3;
 
   DateTime createdAt = DateTime.now();
   DateTime updatedAt = DateTime.now();
+  DateTime? doneAt;
 
   // Relations — must be late final + initialized
-  final seasons = ToMany<VideoDataModel>();
-  final episodes = ToMany<VideoDataModel>();
+  final seasons = ToMany<MediaDataModel>();
+  final episodes = ToMany<MediaDataModel>();
   final author = ToOne<CreatorDataModel>();
   final category = ToOne<CategoryDataModel>();
   final tag = ToOne<TagDataModel>();
 
   // Required empty constructor
-  VideoDataModel();
+  MediaDataModel();
 
   // Optional clean constructor
-  VideoDataModel.create({
+  MediaDataModel.create({
     required this.name,
     required this.description,
     required this.imgPath,

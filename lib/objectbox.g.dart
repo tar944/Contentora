@@ -15,14 +15,13 @@ import 'package:objectbox/objectbox.dart' as obx;
 import 'package:objectbox_flutter_libs/objectbox_flutter_libs.dart';
 
 import 'data/models/articleDataModel.dart';
-import 'data/models/audioDataModel.dart';
 import 'data/models/bookDataModel.dart';
 import 'data/models/categoryDataModel.dart';
 import 'data/models/creatorDataModel.dart';
+import 'data/models/mediaDataModel.dart';
 import 'data/models/partDataModel.dart';
 import 'data/models/personDataModel.dart';
 import 'data/models/tagDataModel.dart';
-import 'data/models/videoDataModel.dart';
 
 export 'package:objectbox/objectbox.dart'; // so that callers only have to import this file
 
@@ -324,114 +323,6 @@ final _entities = <obx_int.ModelEntity>[
     backlinks: <obx_int.ModelBacklink>[],
   ),
   obx_int.ModelEntity(
-    id: const obx_int.IdUid(7, 5286136240034329428),
-    name: 'AudioDataModel',
-    lastPropertyId: const obx_int.IdUid(13, 6808098385261951466),
-    flags: 0,
-    properties: <obx_int.ModelProperty>[
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(1, 5861269937207469401),
-        name: 'id',
-        type: 6,
-        flags: 1,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(2, 4480598913423517786),
-        name: 'name',
-        type: 9,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(3, 2027315003292595633),
-        name: 'description',
-        type: 9,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(4, 6681084087819257349),
-        name: 'srcLink',
-        type: 9,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(5, 4724269269208033667),
-        name: 'imgPath',
-        type: 9,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(6, 4330461594355769129),
-        name: 'state',
-        type: 9,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(7, 2091177118209518777),
-        name: 'myStarCount',
-        type: 6,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(8, 1989293030817632443),
-        name: 'starCount',
-        type: 6,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(9, 4415690396468911159),
-        name: 'createdAt',
-        type: 10,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(10, 391532923016217868),
-        name: 'updatedAt',
-        type: 10,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(11, 5574577239921535255),
-        name: 'hostId',
-        type: 11,
-        flags: 520,
-        indexId: const obx_int.IdUid(4, 1937502100261002669),
-        relationField: 'host',
-        relationTarget: 'CreatorDataModel',
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(12, 558324595434012927),
-        name: 'categoryId',
-        type: 11,
-        flags: 520,
-        indexId: const obx_int.IdUid(5, 4946800383141316696),
-        relationField: 'category',
-        relationTarget: 'CategoryDataModel',
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(13, 6808098385261951466),
-        name: 'tagId',
-        type: 11,
-        flags: 520,
-        indexId: const obx_int.IdUid(6, 3304799451364227667),
-        relationField: 'tag',
-        relationTarget: 'TagDataModel',
-      ),
-    ],
-    relations: <obx_int.ModelRelation>[
-      obx_int.ModelRelation(
-        id: const obx_int.IdUid(3, 8304152908870740824),
-        name: 'episodes',
-        targetId: const obx_int.IdUid(7, 5286136240034329428),
-      ),
-      obx_int.ModelRelation(
-        id: const obx_int.IdUid(4, 6983520069188337809),
-        name: 'allParts',
-        targetId: const obx_int.IdUid(3, 3251236955509698794),
-      ),
-    ],
-    backlinks: <obx_int.ModelBacklink>[],
-  ),
-  obx_int.ModelEntity(
     id: const obx_int.IdUid(8, 5694658342765565866),
     name: 'BookDataModel',
     lastPropertyId: const obx_int.IdUid(17, 7158409865120385891),
@@ -678,121 +569,127 @@ final _entities = <obx_int.ModelEntity>[
     backlinks: <obx_int.ModelBacklink>[],
   ),
   obx_int.ModelEntity(
-    id: const obx_int.IdUid(11, 908369626461378473),
-    name: 'VideoDataModel',
-    lastPropertyId: const obx_int.IdUid(15, 7244409427896391841),
+    id: const obx_int.IdUid(12, 7969423138344249402),
+    name: 'MediaDataModel',
+    lastPropertyId: const obx_int.IdUid(16, 3003865688103053454),
     flags: 0,
     properties: <obx_int.ModelProperty>[
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(1, 329647919243878905),
+        id: const obx_int.IdUid(1, 8270835291303789808),
         name: 'id',
         type: 6,
         flags: 1,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(2, 4899222852244447282),
+        id: const obx_int.IdUid(2, 2129946671510999972),
         name: 'name',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(3, 3025269010688831697),
+        id: const obx_int.IdUid(3, 2964754421902020579),
         name: 'description',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(4, 9124366214525585420),
+        id: const obx_int.IdUid(4, 5507029947977610899),
         name: 'imgPath',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(5, 2527967772755221789),
+        id: const obx_int.IdUid(5, 2597430584354165328),
         name: 'srcLink',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(6, 5959262128590980146),
+        id: const obx_int.IdUid(6, 7341022566391883404),
         name: 'reviewLink',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(7, 6865843561512030498),
+        id: const obx_int.IdUid(7, 1682416914781460342),
         name: 'state',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(8, 4873807220167246820),
+        id: const obx_int.IdUid(8, 6171626710001081298),
         name: 'kind',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(9, 388645254597586452),
+        id: const obx_int.IdUid(9, 6546877217069687564),
         name: 'myStarCount',
         type: 6,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(10, 8924766127320584549),
+        id: const obx_int.IdUid(10, 2100296444924550445),
         name: 'starCount',
         type: 6,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(11, 5968201371233910265),
+        id: const obx_int.IdUid(11, 7141657844271846444),
         name: 'createdAt',
         type: 10,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(12, 7751691272071129293),
+        id: const obx_int.IdUid(12, 743244410415333258),
         name: 'updatedAt',
         type: 10,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(13, 8816888996022932593),
+        id: const obx_int.IdUid(13, 6861452872227943502),
+        name: 'doneAt',
+        type: 10,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(14, 8152693581031704652),
         name: 'authorId',
         type: 11,
         flags: 520,
-        indexId: const obx_int.IdUid(12, 594326089344902940),
+        indexId: const obx_int.IdUid(15, 8680004589164554633),
         relationField: 'author',
         relationTarget: 'CreatorDataModel',
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(14, 1285703126122845730),
+        id: const obx_int.IdUid(15, 5455508631579617907),
         name: 'categoryId',
         type: 11,
         flags: 520,
-        indexId: const obx_int.IdUid(13, 5244514079228160144),
+        indexId: const obx_int.IdUid(16, 1080285911387698592),
         relationField: 'category',
         relationTarget: 'CategoryDataModel',
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(15, 7244409427896391841),
+        id: const obx_int.IdUid(16, 3003865688103053454),
         name: 'tagId',
         type: 11,
         flags: 520,
-        indexId: const obx_int.IdUid(14, 8341239411223296513),
+        indexId: const obx_int.IdUid(17, 4420392805225590712),
         relationField: 'tag',
         relationTarget: 'TagDataModel',
       ),
     ],
     relations: <obx_int.ModelRelation>[
       obx_int.ModelRelation(
-        id: const obx_int.IdUid(7, 8938418616669260303),
+        id: const obx_int.IdUid(9, 8828826810676050430),
         name: 'seasons',
-        targetId: const obx_int.IdUid(11, 908369626461378473),
+        targetId: const obx_int.IdUid(12, 7969423138344249402),
       ),
       obx_int.ModelRelation(
-        id: const obx_int.IdUid(8, 2039573190397485539),
+        id: const obx_int.IdUid(10, 5402729441351159015),
         name: 'episodes',
-        targetId: const obx_int.IdUid(11, 908369626461378473),
+        targetId: const obx_int.IdUid(12, 7969423138344249402),
       ),
     ],
     backlinks: <obx_int.ModelBacklink>[],
@@ -837,11 +734,16 @@ Future<obx.Store> openStore({
 obx_int.ModelDefinition getObjectBoxModel() {
   final model = obx_int.ModelInfo(
     entities: _entities,
-    lastEntityId: const obx_int.IdUid(11, 908369626461378473),
-    lastIndexId: const obx_int.IdUid(14, 8341239411223296513),
-    lastRelationId: const obx_int.IdUid(8, 2039573190397485539),
+    lastEntityId: const obx_int.IdUid(12, 7969423138344249402),
+    lastIndexId: const obx_int.IdUid(17, 4420392805225590712),
+    lastRelationId: const obx_int.IdUid(10, 5402729441351159015),
     lastSequenceId: const obx_int.IdUid(0, 0),
-    retiredEntityUids: const [2044285761471285534, 6224410449028813634],
+    retiredEntityUids: const [
+      2044285761471285534,
+      6224410449028813634,
+      5286136240034329428,
+      908369626461378473,
+    ],
     retiredIndexUids: const [],
     retiredPropertyUids: const [
       3498658896946705679,
@@ -866,6 +768,34 @@ obx_int.ModelDefinition getObjectBoxModel() {
       6163917219428685748,
       6635609490872363580,
       1960496101390936671,
+      5861269937207469401,
+      4480598913423517786,
+      2027315003292595633,
+      6681084087819257349,
+      4724269269208033667,
+      4330461594355769129,
+      2091177118209518777,
+      1989293030817632443,
+      4415690396468911159,
+      391532923016217868,
+      5574577239921535255,
+      558324595434012927,
+      6808098385261951466,
+      329647919243878905,
+      4899222852244447282,
+      3025269010688831697,
+      9124366214525585420,
+      2527967772755221789,
+      5959262128590980146,
+      6865843561512030498,
+      4873807220167246820,
+      388645254597586452,
+      8924766127320584549,
+      5968201371233910265,
+      7751691272071129293,
+      8816888996022932593,
+      1285703126122845730,
+      7244409427896391841,
     ],
     retiredRelationUids: const [],
     modelVersion: 5,
@@ -1169,119 +1099,8 @@ obx_int.ModelDefinition getObjectBoxModel() {
         return object;
       },
     ),
-    AudioDataModel: obx_int.EntityDefinition<AudioDataModel>(
-      model: _entities[5],
-      toOneRelations: (AudioDataModel object) => [
-        object.host,
-        object.category,
-        object.tag,
-      ],
-      toManyRelations: (AudioDataModel object) => {
-        obx_int.RelInfo<AudioDataModel>.toMany(3, object.id): object.episodes,
-        obx_int.RelInfo<AudioDataModel>.toMany(4, object.id): object.allParts,
-      },
-      getId: (AudioDataModel object) => object.id,
-      setId: (AudioDataModel object, int id) {
-        object.id = id;
-      },
-      objectToFB: (AudioDataModel object, fb.Builder fbb) {
-        final nameOffset = fbb.writeString(object.name);
-        final descriptionOffset = fbb.writeString(object.description);
-        final srcLinkOffset = fbb.writeString(object.srcLink);
-        final imgPathOffset = fbb.writeString(object.imgPath);
-        final stateOffset = fbb.writeString(object.state);
-        fbb.startTable(14);
-        fbb.addInt64(0, object.id);
-        fbb.addOffset(1, nameOffset);
-        fbb.addOffset(2, descriptionOffset);
-        fbb.addOffset(3, srcLinkOffset);
-        fbb.addOffset(4, imgPathOffset);
-        fbb.addOffset(5, stateOffset);
-        fbb.addInt64(6, object.myStarCount);
-        fbb.addInt64(7, object.starCount);
-        fbb.addInt64(8, object.createdAt.millisecondsSinceEpoch);
-        fbb.addInt64(9, object.updatedAt.millisecondsSinceEpoch);
-        fbb.addInt64(10, object.host.targetId);
-        fbb.addInt64(11, object.category.targetId);
-        fbb.addInt64(12, object.tag.targetId);
-        fbb.finish(fbb.endTable());
-        return object.id;
-      },
-      objectFromFB: (obx.Store store, ByteData fbData) {
-        final buffer = fb.BufferContext(fbData);
-        final rootOffset = buffer.derefObject(0);
-
-        final object = AudioDataModel()
-          ..id = const fb.Int64Reader().vTableGet(buffer, rootOffset, 4, 0)
-          ..name = const fb.StringReader(
-            asciiOptimization: true,
-          ).vTableGet(buffer, rootOffset, 6, '')
-          ..description = const fb.StringReader(
-            asciiOptimization: true,
-          ).vTableGet(buffer, rootOffset, 8, '')
-          ..srcLink = const fb.StringReader(
-            asciiOptimization: true,
-          ).vTableGet(buffer, rootOffset, 10, '')
-          ..imgPath = const fb.StringReader(
-            asciiOptimization: true,
-          ).vTableGet(buffer, rootOffset, 12, '')
-          ..state = const fb.StringReader(
-            asciiOptimization: true,
-          ).vTableGet(buffer, rootOffset, 14, '')
-          ..myStarCount = const fb.Int64Reader().vTableGet(
-            buffer,
-            rootOffset,
-            16,
-            0,
-          )
-          ..starCount = const fb.Int64Reader().vTableGet(
-            buffer,
-            rootOffset,
-            18,
-            0,
-          )
-          ..createdAt = DateTime.fromMillisecondsSinceEpoch(
-            const fb.Int64Reader().vTableGet(buffer, rootOffset, 20, 0),
-          )
-          ..updatedAt = DateTime.fromMillisecondsSinceEpoch(
-            const fb.Int64Reader().vTableGet(buffer, rootOffset, 22, 0),
-          );
-        object.host.targetId = const fb.Int64Reader().vTableGet(
-          buffer,
-          rootOffset,
-          24,
-          0,
-        );
-        object.host.attach(store);
-        object.category.targetId = const fb.Int64Reader().vTableGet(
-          buffer,
-          rootOffset,
-          26,
-          0,
-        );
-        object.category.attach(store);
-        object.tag.targetId = const fb.Int64Reader().vTableGet(
-          buffer,
-          rootOffset,
-          28,
-          0,
-        );
-        object.tag.attach(store);
-        obx_int.InternalToManyAccess.setRelInfo<AudioDataModel>(
-          object.episodes,
-          store,
-          obx_int.RelInfo<AudioDataModel>.toMany(3, object.id),
-        );
-        obx_int.InternalToManyAccess.setRelInfo<AudioDataModel>(
-          object.allParts,
-          store,
-          obx_int.RelInfo<AudioDataModel>.toMany(4, object.id),
-        );
-        return object;
-      },
-    ),
     BookDataModel: obx_int.EntityDefinition<BookDataModel>(
-      model: _entities[6],
+      model: _entities[5],
       toOneRelations: (BookDataModel object) => [
         object.author,
         object.lender,
@@ -1420,7 +1239,7 @@ obx_int.ModelDefinition getObjectBoxModel() {
       },
     ),
     ArticleDataModel: obx_int.EntityDefinition<ArticleDataModel>(
-      model: _entities[7],
+      model: _entities[6],
       toOneRelations: (ArticleDataModel object) => [
         object.writer,
         object.category,
@@ -1531,22 +1350,22 @@ obx_int.ModelDefinition getObjectBoxModel() {
         return object;
       },
     ),
-    VideoDataModel: obx_int.EntityDefinition<VideoDataModel>(
-      model: _entities[8],
-      toOneRelations: (VideoDataModel object) => [
+    MediaDataModel: obx_int.EntityDefinition<MediaDataModel>(
+      model: _entities[7],
+      toOneRelations: (MediaDataModel object) => [
         object.author,
         object.category,
         object.tag,
       ],
-      toManyRelations: (VideoDataModel object) => {
-        obx_int.RelInfo<VideoDataModel>.toMany(7, object.id): object.seasons,
-        obx_int.RelInfo<VideoDataModel>.toMany(8, object.id): object.episodes,
+      toManyRelations: (MediaDataModel object) => {
+        obx_int.RelInfo<MediaDataModel>.toMany(9, object.id): object.seasons,
+        obx_int.RelInfo<MediaDataModel>.toMany(10, object.id): object.episodes,
       },
-      getId: (VideoDataModel object) => object.id,
-      setId: (VideoDataModel object, int id) {
+      getId: (MediaDataModel object) => object.id,
+      setId: (MediaDataModel object, int id) {
         object.id = id;
       },
-      objectToFB: (VideoDataModel object, fb.Builder fbb) {
+      objectToFB: (MediaDataModel object, fb.Builder fbb) {
         final nameOffset = fbb.writeString(object.name);
         final descriptionOffset = fbb.writeString(object.description);
         final imgPathOffset = fbb.writeString(object.imgPath);
@@ -1554,7 +1373,7 @@ obx_int.ModelDefinition getObjectBoxModel() {
         final reviewLinkOffset = fbb.writeString(object.reviewLink);
         final stateOffset = fbb.writeString(object.state);
         final kindOffset = fbb.writeString(object.kind);
-        fbb.startTable(16);
+        fbb.startTable(17);
         fbb.addInt64(0, object.id);
         fbb.addOffset(1, nameOffset);
         fbb.addOffset(2, descriptionOffset);
@@ -1567,17 +1386,22 @@ obx_int.ModelDefinition getObjectBoxModel() {
         fbb.addInt64(9, object.starCount);
         fbb.addInt64(10, object.createdAt.millisecondsSinceEpoch);
         fbb.addInt64(11, object.updatedAt.millisecondsSinceEpoch);
-        fbb.addInt64(12, object.author.targetId);
-        fbb.addInt64(13, object.category.targetId);
-        fbb.addInt64(14, object.tag.targetId);
+        fbb.addInt64(12, object.doneAt?.millisecondsSinceEpoch);
+        fbb.addInt64(13, object.author.targetId);
+        fbb.addInt64(14, object.category.targetId);
+        fbb.addInt64(15, object.tag.targetId);
         fbb.finish(fbb.endTable());
         return object.id;
       },
       objectFromFB: (obx.Store store, ByteData fbData) {
         final buffer = fb.BufferContext(fbData);
         final rootOffset = buffer.derefObject(0);
-
-        final object = VideoDataModel()
+        final doneAtValue = const fb.Int64Reader().vTableGetNullable(
+          buffer,
+          rootOffset,
+          28,
+        );
+        final object = MediaDataModel()
           ..id = const fb.Int64Reader().vTableGet(buffer, rootOffset, 4, 0)
           ..name = const fb.StringReader(
             asciiOptimization: true,
@@ -1617,37 +1441,40 @@ obx_int.ModelDefinition getObjectBoxModel() {
           )
           ..updatedAt = DateTime.fromMillisecondsSinceEpoch(
             const fb.Int64Reader().vTableGet(buffer, rootOffset, 26, 0),
-          );
+          )
+          ..doneAt = doneAtValue == null
+              ? null
+              : DateTime.fromMillisecondsSinceEpoch(doneAtValue);
         object.author.targetId = const fb.Int64Reader().vTableGet(
           buffer,
           rootOffset,
-          28,
+          30,
           0,
         );
         object.author.attach(store);
         object.category.targetId = const fb.Int64Reader().vTableGet(
           buffer,
           rootOffset,
-          30,
+          32,
           0,
         );
         object.category.attach(store);
         object.tag.targetId = const fb.Int64Reader().vTableGet(
           buffer,
           rootOffset,
-          32,
+          34,
           0,
         );
         object.tag.attach(store);
-        obx_int.InternalToManyAccess.setRelInfo<VideoDataModel>(
+        obx_int.InternalToManyAccess.setRelInfo<MediaDataModel>(
           object.seasons,
           store,
-          obx_int.RelInfo<VideoDataModel>.toMany(7, object.id),
+          obx_int.RelInfo<MediaDataModel>.toMany(9, object.id),
         );
-        obx_int.InternalToManyAccess.setRelInfo<VideoDataModel>(
+        obx_int.InternalToManyAccess.setRelInfo<MediaDataModel>(
           object.episodes,
           store,
-          obx_int.RelInfo<VideoDataModel>.toMany(8, object.id),
+          obx_int.RelInfo<MediaDataModel>.toMany(10, object.id),
         );
         return object;
       },
@@ -1877,184 +1704,103 @@ class TagDataModel_ {
   );
 }
 
-/// [AudioDataModel] entity fields to define ObjectBox queries.
-class AudioDataModel_ {
-  /// See [AudioDataModel.id].
-  static final id = obx.QueryIntegerProperty<AudioDataModel>(
-    _entities[5].properties[0],
-  );
-
-  /// See [AudioDataModel.name].
-  static final name = obx.QueryStringProperty<AudioDataModel>(
-    _entities[5].properties[1],
-  );
-
-  /// See [AudioDataModel.description].
-  static final description = obx.QueryStringProperty<AudioDataModel>(
-    _entities[5].properties[2],
-  );
-
-  /// See [AudioDataModel.srcLink].
-  static final srcLink = obx.QueryStringProperty<AudioDataModel>(
-    _entities[5].properties[3],
-  );
-
-  /// See [AudioDataModel.imgPath].
-  static final imgPath = obx.QueryStringProperty<AudioDataModel>(
-    _entities[5].properties[4],
-  );
-
-  /// See [AudioDataModel.state].
-  static final state = obx.QueryStringProperty<AudioDataModel>(
-    _entities[5].properties[5],
-  );
-
-  /// See [AudioDataModel.myStarCount].
-  static final myStarCount = obx.QueryIntegerProperty<AudioDataModel>(
-    _entities[5].properties[6],
-  );
-
-  /// See [AudioDataModel.starCount].
-  static final starCount = obx.QueryIntegerProperty<AudioDataModel>(
-    _entities[5].properties[7],
-  );
-
-  /// See [AudioDataModel.createdAt].
-  static final createdAt = obx.QueryDateProperty<AudioDataModel>(
-    _entities[5].properties[8],
-  );
-
-  /// See [AudioDataModel.updatedAt].
-  static final updatedAt = obx.QueryDateProperty<AudioDataModel>(
-    _entities[5].properties[9],
-  );
-
-  /// See [AudioDataModel.host].
-  static final host = obx.QueryRelationToOne<AudioDataModel, CreatorDataModel>(
-    _entities[5].properties[10],
-  );
-
-  /// See [AudioDataModel.category].
-  static final category =
-      obx.QueryRelationToOne<AudioDataModel, CategoryDataModel>(
-        _entities[5].properties[11],
-      );
-
-  /// See [AudioDataModel.tag].
-  static final tag = obx.QueryRelationToOne<AudioDataModel, TagDataModel>(
-    _entities[5].properties[12],
-  );
-
-  /// see [AudioDataModel.episodes]
-  static final episodes =
-      obx.QueryRelationToMany<AudioDataModel, AudioDataModel>(
-        _entities[5].relations[0],
-      );
-
-  /// see [AudioDataModel.allParts]
-  static final allParts =
-      obx.QueryRelationToMany<AudioDataModel, PartDataModel>(
-        _entities[5].relations[1],
-      );
-}
-
 /// [BookDataModel] entity fields to define ObjectBox queries.
 class BookDataModel_ {
   /// See [BookDataModel.id].
   static final id = obx.QueryIntegerProperty<BookDataModel>(
-    _entities[6].properties[0],
+    _entities[5].properties[0],
   );
 
   /// See [BookDataModel.name].
   static final name = obx.QueryStringProperty<BookDataModel>(
-    _entities[6].properties[1],
+    _entities[5].properties[1],
   );
 
   /// See [BookDataModel.description].
   static final description = obx.QueryStringProperty<BookDataModel>(
-    _entities[6].properties[2],
+    _entities[5].properties[2],
   );
 
   /// See [BookDataModel.srcLink].
   static final srcLink = obx.QueryStringProperty<BookDataModel>(
-    _entities[6].properties[3],
+    _entities[5].properties[3],
   );
 
   /// See [BookDataModel.reviewLink].
   static final reviewLink = obx.QueryStringProperty<BookDataModel>(
-    _entities[6].properties[4],
+    _entities[5].properties[4],
   );
 
   /// See [BookDataModel.imgPath].
   static final imgPath = obx.QueryStringProperty<BookDataModel>(
-    _entities[6].properties[5],
+    _entities[5].properties[5],
   );
 
   /// See [BookDataModel.state].
   static final state = obx.QueryStringProperty<BookDataModel>(
-    _entities[6].properties[6],
+    _entities[5].properties[6],
   );
 
   /// See [BookDataModel.kind].
   static final kind = obx.QueryStringProperty<BookDataModel>(
-    _entities[6].properties[7],
+    _entities[5].properties[7],
   );
 
   /// See [BookDataModel.myStarCount].
   static final myStarCount = obx.QueryIntegerProperty<BookDataModel>(
-    _entities[6].properties[8],
+    _entities[5].properties[8],
   );
 
   /// See [BookDataModel.starCount].
   static final starCount = obx.QueryIntegerProperty<BookDataModel>(
-    _entities[6].properties[9],
+    _entities[5].properties[9],
   );
 
   /// See [BookDataModel.createdAt].
   static final createdAt = obx.QueryDateProperty<BookDataModel>(
-    _entities[6].properties[10],
+    _entities[5].properties[10],
   );
 
   /// See [BookDataModel.updatedAt].
   static final updatedAt = obx.QueryDateProperty<BookDataModel>(
-    _entities[6].properties[11],
+    _entities[5].properties[11],
   );
 
   /// See [BookDataModel.author].
   static final author = obx.QueryRelationToOne<BookDataModel, CreatorDataModel>(
-    _entities[6].properties[12],
+    _entities[5].properties[12],
   );
 
   /// See [BookDataModel.lender].
   static final lender = obx.QueryRelationToOne<BookDataModel, PersonDataModel>(
-    _entities[6].properties[13],
+    _entities[5].properties[13],
   );
 
   /// See [BookDataModel.borrower].
   static final borrower =
       obx.QueryRelationToOne<BookDataModel, PersonDataModel>(
-        _entities[6].properties[14],
+        _entities[5].properties[14],
       );
 
   /// See [BookDataModel.category].
   static final category =
       obx.QueryRelationToOne<BookDataModel, CategoryDataModel>(
-        _entities[6].properties[15],
+        _entities[5].properties[15],
       );
 
   /// See [BookDataModel.tag].
   static final tag = obx.QueryRelationToOne<BookDataModel, TagDataModel>(
-    _entities[6].properties[16],
+    _entities[5].properties[16],
   );
 
   /// see [BookDataModel.series]
   static final series = obx.QueryRelationToMany<BookDataModel, BookDataModel>(
-    _entities[6].relations[0],
+    _entities[5].relations[0],
   );
 
   /// see [BookDataModel.allParts]
   static final allParts = obx.QueryRelationToMany<BookDataModel, PartDataModel>(
-    _entities[6].relations[1],
+    _entities[5].relations[1],
   );
 }
 
@@ -2062,172 +1808,177 @@ class BookDataModel_ {
 class ArticleDataModel_ {
   /// See [ArticleDataModel.id].
   static final id = obx.QueryIntegerProperty<ArticleDataModel>(
-    _entities[7].properties[0],
+    _entities[6].properties[0],
   );
 
   /// See [ArticleDataModel.name].
   static final name = obx.QueryStringProperty<ArticleDataModel>(
-    _entities[7].properties[1],
+    _entities[6].properties[1],
   );
 
   /// See [ArticleDataModel.description].
   static final description = obx.QueryStringProperty<ArticleDataModel>(
-    _entities[7].properties[2],
+    _entities[6].properties[2],
   );
 
   /// See [ArticleDataModel.srcLink].
   static final srcLink = obx.QueryStringProperty<ArticleDataModel>(
-    _entities[7].properties[3],
+    _entities[6].properties[3],
   );
 
   /// See [ArticleDataModel.imgPath].
   static final imgPath = obx.QueryStringProperty<ArticleDataModel>(
-    _entities[7].properties[4],
+    _entities[6].properties[4],
   );
 
   /// See [ArticleDataModel.state].
   static final state = obx.QueryStringProperty<ArticleDataModel>(
-    _entities[7].properties[5],
+    _entities[6].properties[5],
   );
 
   /// See [ArticleDataModel.myStarCount].
   static final myStarCount = obx.QueryIntegerProperty<ArticleDataModel>(
-    _entities[7].properties[6],
+    _entities[6].properties[6],
   );
 
   /// See [ArticleDataModel.starCount].
   static final starCount = obx.QueryIntegerProperty<ArticleDataModel>(
-    _entities[7].properties[7],
+    _entities[6].properties[7],
   );
 
   /// See [ArticleDataModel.createdAt].
   static final createdAt = obx.QueryDateProperty<ArticleDataModel>(
-    _entities[7].properties[8],
+    _entities[6].properties[8],
   );
 
   /// See [ArticleDataModel.updatedAt].
   static final updatedAt = obx.QueryDateProperty<ArticleDataModel>(
-    _entities[7].properties[9],
+    _entities[6].properties[9],
   );
 
   /// See [ArticleDataModel.writer].
   static final writer =
       obx.QueryRelationToOne<ArticleDataModel, CreatorDataModel>(
-        _entities[7].properties[10],
+        _entities[6].properties[10],
       );
 
   /// See [ArticleDataModel.category].
   static final category =
       obx.QueryRelationToOne<ArticleDataModel, CategoryDataModel>(
-        _entities[7].properties[11],
+        _entities[6].properties[11],
       );
 
   /// See [ArticleDataModel.tag].
   static final tag = obx.QueryRelationToOne<ArticleDataModel, TagDataModel>(
-    _entities[7].properties[12],
+    _entities[6].properties[12],
   );
 
   /// see [ArticleDataModel.subArticles]
   static final subArticles =
       obx.QueryRelationToMany<ArticleDataModel, ArticleDataModel>(
-        _entities[7].relations[0],
+        _entities[6].relations[0],
       );
 
   /// see [ArticleDataModel.allParts]
   static final allParts =
       obx.QueryRelationToMany<ArticleDataModel, PartDataModel>(
-        _entities[7].relations[1],
+        _entities[6].relations[1],
       );
 }
 
-/// [VideoDataModel] entity fields to define ObjectBox queries.
-class VideoDataModel_ {
-  /// See [VideoDataModel.id].
-  static final id = obx.QueryIntegerProperty<VideoDataModel>(
-    _entities[8].properties[0],
+/// [MediaDataModel] entity fields to define ObjectBox queries.
+class MediaDataModel_ {
+  /// See [MediaDataModel.id].
+  static final id = obx.QueryIntegerProperty<MediaDataModel>(
+    _entities[7].properties[0],
   );
 
-  /// See [VideoDataModel.name].
-  static final name = obx.QueryStringProperty<VideoDataModel>(
-    _entities[8].properties[1],
+  /// See [MediaDataModel.name].
+  static final name = obx.QueryStringProperty<MediaDataModel>(
+    _entities[7].properties[1],
   );
 
-  /// See [VideoDataModel.description].
-  static final description = obx.QueryStringProperty<VideoDataModel>(
-    _entities[8].properties[2],
+  /// See [MediaDataModel.description].
+  static final description = obx.QueryStringProperty<MediaDataModel>(
+    _entities[7].properties[2],
   );
 
-  /// See [VideoDataModel.imgPath].
-  static final imgPath = obx.QueryStringProperty<VideoDataModel>(
-    _entities[8].properties[3],
+  /// See [MediaDataModel.imgPath].
+  static final imgPath = obx.QueryStringProperty<MediaDataModel>(
+    _entities[7].properties[3],
   );
 
-  /// See [VideoDataModel.srcLink].
-  static final srcLink = obx.QueryStringProperty<VideoDataModel>(
-    _entities[8].properties[4],
+  /// See [MediaDataModel.srcLink].
+  static final srcLink = obx.QueryStringProperty<MediaDataModel>(
+    _entities[7].properties[4],
   );
 
-  /// See [VideoDataModel.reviewLink].
-  static final reviewLink = obx.QueryStringProperty<VideoDataModel>(
-    _entities[8].properties[5],
+  /// See [MediaDataModel.reviewLink].
+  static final reviewLink = obx.QueryStringProperty<MediaDataModel>(
+    _entities[7].properties[5],
   );
 
-  /// See [VideoDataModel.state].
-  static final state = obx.QueryStringProperty<VideoDataModel>(
-    _entities[8].properties[6],
+  /// See [MediaDataModel.state].
+  static final state = obx.QueryStringProperty<MediaDataModel>(
+    _entities[7].properties[6],
   );
 
-  /// See [VideoDataModel.kind].
-  static final kind = obx.QueryStringProperty<VideoDataModel>(
-    _entities[8].properties[7],
+  /// See [MediaDataModel.kind].
+  static final kind = obx.QueryStringProperty<MediaDataModel>(
+    _entities[7].properties[7],
   );
 
-  /// See [VideoDataModel.myStarCount].
-  static final myStarCount = obx.QueryIntegerProperty<VideoDataModel>(
-    _entities[8].properties[8],
+  /// See [MediaDataModel.myStarCount].
+  static final myStarCount = obx.QueryIntegerProperty<MediaDataModel>(
+    _entities[7].properties[8],
   );
 
-  /// See [VideoDataModel.starCount].
-  static final starCount = obx.QueryIntegerProperty<VideoDataModel>(
-    _entities[8].properties[9],
+  /// See [MediaDataModel.starCount].
+  static final starCount = obx.QueryIntegerProperty<MediaDataModel>(
+    _entities[7].properties[9],
   );
 
-  /// See [VideoDataModel.createdAt].
-  static final createdAt = obx.QueryDateProperty<VideoDataModel>(
-    _entities[8].properties[10],
+  /// See [MediaDataModel.createdAt].
+  static final createdAt = obx.QueryDateProperty<MediaDataModel>(
+    _entities[7].properties[10],
   );
 
-  /// See [VideoDataModel.updatedAt].
-  static final updatedAt = obx.QueryDateProperty<VideoDataModel>(
-    _entities[8].properties[11],
+  /// See [MediaDataModel.updatedAt].
+  static final updatedAt = obx.QueryDateProperty<MediaDataModel>(
+    _entities[7].properties[11],
   );
 
-  /// See [VideoDataModel.author].
+  /// See [MediaDataModel.doneAt].
+  static final doneAt = obx.QueryDateProperty<MediaDataModel>(
+    _entities[7].properties[12],
+  );
+
+  /// See [MediaDataModel.author].
   static final author =
-      obx.QueryRelationToOne<VideoDataModel, CreatorDataModel>(
-        _entities[8].properties[12],
+      obx.QueryRelationToOne<MediaDataModel, CreatorDataModel>(
+        _entities[7].properties[13],
       );
 
-  /// See [VideoDataModel.category].
+  /// See [MediaDataModel.category].
   static final category =
-      obx.QueryRelationToOne<VideoDataModel, CategoryDataModel>(
-        _entities[8].properties[13],
+      obx.QueryRelationToOne<MediaDataModel, CategoryDataModel>(
+        _entities[7].properties[14],
       );
 
-  /// See [VideoDataModel.tag].
-  static final tag = obx.QueryRelationToOne<VideoDataModel, TagDataModel>(
-    _entities[8].properties[14],
+  /// See [MediaDataModel.tag].
+  static final tag = obx.QueryRelationToOne<MediaDataModel, TagDataModel>(
+    _entities[7].properties[15],
   );
 
-  /// see [VideoDataModel.seasons]
+  /// see [MediaDataModel.seasons]
   static final seasons =
-      obx.QueryRelationToMany<VideoDataModel, VideoDataModel>(
-        _entities[8].relations[0],
+      obx.QueryRelationToMany<MediaDataModel, MediaDataModel>(
+        _entities[7].relations[0],
       );
 
-  /// see [VideoDataModel.episodes]
+  /// see [MediaDataModel.episodes]
   static final episodes =
-      obx.QueryRelationToMany<VideoDataModel, VideoDataModel>(
-        _entities[8].relations[1],
+      obx.QueryRelationToMany<MediaDataModel, MediaDataModel>(
+        _entities[7].relations[1],
       );
 }
