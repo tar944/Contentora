@@ -1,0 +1,706 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:394699857501310013",
+      "lastPropertyId": "8:8914295541855306743",
+      "name": "CategoryDataModel",
+      "properties": [
+        {
+          "id": "1:3495302254030092973",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6776484871021674121",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:5052953887121577006",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:8985748480727615732",
+          "name": "imgPath",
+          "type": 9
+        },
+        {
+          "id": "5:9179150149946913473",
+          "name": "isFor",
+          "type": 9
+        },
+        {
+          "id": "6:5129874300583038544",
+          "name": "isActive",
+          "type": 1
+        },
+        {
+          "id": "7:7150062822835738211",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "8:8914295541855306743",
+          "name": "updatedAt",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2963559256900539031",
+      "lastPropertyId": "10:9103388985536045611",
+      "name": "CreatorDataModel",
+      "properties": [
+        {
+          "id": "1:6747086668630494749",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:569299337252760771",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:1344781948024257419",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:4755759996938574308",
+          "name": "imgPath",
+          "type": 9
+        },
+        {
+          "id": "5:618788915784822147",
+          "name": "instaLink",
+          "type": 9
+        },
+        {
+          "id": "6:4522659034617642585",
+          "name": "xLink",
+          "type": 9
+        },
+        {
+          "id": "7:6392112751105580879",
+          "name": "wikiLink",
+          "type": 9
+        },
+        {
+          "id": "8:7016763478872891787",
+          "name": "isFor",
+          "type": 9
+        },
+        {
+          "id": "9:9074800768140484538",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "10:9103388985536045611",
+          "name": "updatedAt",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:3251236955509698794",
+      "lastPropertyId": "8:2983333713680234383",
+      "name": "PartDataModel",
+      "properties": [
+        {
+          "id": "1:4267173381798318236",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4281304185443880794",
+          "name": "from",
+          "type": 6
+        },
+        {
+          "id": "3:8583925796075652421",
+          "name": "to",
+          "type": 6
+        },
+        {
+          "id": "4:4343678538985289893",
+          "name": "sortNumber",
+          "type": 6
+        },
+        {
+          "id": "5:1895611110898418205",
+          "name": "unit",
+          "type": 9
+        },
+        {
+          "id": "6:8835058252008345245",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "7:2381409106115679322",
+          "name": "updatedAt",
+          "type": 10
+        },
+        {
+          "id": "8:2983333713680234383",
+          "name": "doneAt",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:8563456502839054976",
+      "lastPropertyId": "9:5671871003420121864",
+      "name": "PersonDataModel",
+      "properties": [
+        {
+          "id": "1:2184509048685118264",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2221351701027784755",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:1794949890673217430",
+          "name": "imgPath",
+          "type": 9
+        },
+        {
+          "id": "4:1678213538621388113",
+          "name": "contactInfo",
+          "type": 9
+        },
+        {
+          "id": "5:6486322879855154887",
+          "name": "phoneNumber",
+          "type": 9
+        },
+        {
+          "id": "6:3229948219228510807",
+          "name": "telegramId",
+          "type": 9
+        },
+        {
+          "id": "7:8275578346751422302",
+          "name": "whatsAppId",
+          "type": 9
+        },
+        {
+          "id": "8:3843725337216894015",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "9:5671871003420121864",
+          "name": "updatedAt",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:8219558637018139414",
+      "lastPropertyId": "6:8226747969189907355",
+      "name": "TagDataModel",
+      "properties": [
+        {
+          "id": "1:1219063240839901825",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5179337440300845980",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:9060803083535220906",
+          "name": "emoji",
+          "type": 9
+        },
+        {
+          "id": "4:344576106002991929",
+          "name": "color",
+          "type": 9
+        },
+        {
+          "id": "5:2832462171306449539",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "6:8226747969189907355",
+          "name": "updatedAt",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:5286136240034329428",
+      "lastPropertyId": "13:6808098385261951466",
+      "name": "AudioDataModel",
+      "properties": [
+        {
+          "id": "1:5861269937207469401",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4480598913423517786",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2027315003292595633",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:6681084087819257349",
+          "name": "srcLink",
+          "type": 9
+        },
+        {
+          "id": "5:4724269269208033667",
+          "name": "imgPath",
+          "type": 9
+        },
+        {
+          "id": "6:4330461594355769129",
+          "name": "state",
+          "type": 9
+        },
+        {
+          "id": "7:2091177118209518777",
+          "name": "myStarCount",
+          "type": 6
+        },
+        {
+          "id": "8:1989293030817632443",
+          "name": "starCount",
+          "type": 6
+        },
+        {
+          "id": "9:4415690396468911159",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "10:391532923016217868",
+          "name": "updatedAt",
+          "type": 10
+        },
+        {
+          "id": "11:5574577239921535255",
+          "name": "hostId",
+          "indexId": "4:1937502100261002669",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CreatorDataModel"
+        },
+        {
+          "id": "12:558324595434012927",
+          "name": "categoryId",
+          "indexId": "5:4946800383141316696",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CategoryDataModel"
+        },
+        {
+          "id": "13:6808098385261951466",
+          "name": "tagId",
+          "indexId": "6:3304799451364227667",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "TagDataModel"
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:8304152908870740824",
+          "name": "episodes",
+          "targetId": "7:5286136240034329428"
+        },
+        {
+          "id": "4:6983520069188337809",
+          "name": "allParts",
+          "targetId": "3:3251236955509698794"
+        }
+      ]
+    },
+    {
+      "id": "8:5694658342765565866",
+      "lastPropertyId": "17:7158409865120385891",
+      "name": "BookDataModel",
+      "properties": [
+        {
+          "id": "1:8417664488561395838",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5283826302661221782",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:437513682966012259",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:8333074922342331181",
+          "name": "srcLink",
+          "type": 9
+        },
+        {
+          "id": "5:5409963458688862277",
+          "name": "reviewLink",
+          "type": 9
+        },
+        {
+          "id": "6:6711114229543172805",
+          "name": "imgPath",
+          "type": 9
+        },
+        {
+          "id": "7:5846106253902698866",
+          "name": "state",
+          "type": 9
+        },
+        {
+          "id": "8:3592352313328393368",
+          "name": "kind",
+          "type": 9
+        },
+        {
+          "id": "9:6183793052729732017",
+          "name": "myStarCount",
+          "type": 6
+        },
+        {
+          "id": "10:6218870142672647785",
+          "name": "starCount",
+          "type": 6
+        },
+        {
+          "id": "11:972868837489144767",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "12:2008686192297377037",
+          "name": "updatedAt",
+          "type": 10
+        },
+        {
+          "id": "13:8400708427439553117",
+          "name": "authorId",
+          "indexId": "7:8065305968451273887",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CreatorDataModel"
+        },
+        {
+          "id": "14:4098521868773800094",
+          "name": "lenderId",
+          "indexId": "8:2850051100099495333",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "PersonDataModel"
+        },
+        {
+          "id": "15:7403807839197673996",
+          "name": "borrowerId",
+          "indexId": "9:1155161260340527381",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "PersonDataModel"
+        },
+        {
+          "id": "16:7498905537451762560",
+          "name": "categoryId",
+          "indexId": "10:2506780225479292291",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CategoryDataModel"
+        },
+        {
+          "id": "17:7158409865120385891",
+          "name": "tagId",
+          "indexId": "11:1935215569675672471",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "TagDataModel"
+        }
+      ],
+      "relations": [
+        {
+          "id": "5:677498402874620847",
+          "name": "series",
+          "targetId": "8:5694658342765565866"
+        },
+        {
+          "id": "6:7759913245870567056",
+          "name": "allParts",
+          "targetId": "3:3251236955509698794"
+        }
+      ]
+    },
+    {
+      "id": "10:478562498836310008",
+      "lastPropertyId": "13:3411297636181770408",
+      "name": "ArticleDataModel",
+      "properties": [
+        {
+          "id": "1:7431602400757044434",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7052571121158526410",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:4910032366751117954",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:7112113625671260432",
+          "name": "srcLink",
+          "type": 9
+        },
+        {
+          "id": "5:6734470574020520109",
+          "name": "imgPath",
+          "type": 9
+        },
+        {
+          "id": "6:4040190259216089819",
+          "name": "state",
+          "type": 9
+        },
+        {
+          "id": "7:4771126850330317634",
+          "name": "myStarCount",
+          "type": 6
+        },
+        {
+          "id": "8:3845064689816600490",
+          "name": "starCount",
+          "type": 6
+        },
+        {
+          "id": "9:8767806865116475984",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "10:8681426025729827462",
+          "name": "updatedAt",
+          "type": 10
+        },
+        {
+          "id": "11:8734203818024645193",
+          "name": "writerId",
+          "indexId": "1:3744404352988232452",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CreatorDataModel"
+        },
+        {
+          "id": "12:7623377289399611948",
+          "name": "categoryId",
+          "indexId": "2:1249351784769552626",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CategoryDataModel"
+        },
+        {
+          "id": "13:3411297636181770408",
+          "name": "tagId",
+          "indexId": "3:5150016324923097994",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "TagDataModel"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:5871466929430192744",
+          "name": "subArticles",
+          "targetId": "10:478562498836310008"
+        },
+        {
+          "id": "2:7927065451573185424",
+          "name": "allParts",
+          "targetId": "3:3251236955509698794"
+        }
+      ]
+    },
+    {
+      "id": "11:908369626461378473",
+      "lastPropertyId": "15:7244409427896391841",
+      "name": "VideoDataModel",
+      "properties": [
+        {
+          "id": "1:329647919243878905",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4899222852244447282",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:3025269010688831697",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:9124366214525585420",
+          "name": "imgPath",
+          "type": 9
+        },
+        {
+          "id": "5:2527967772755221789",
+          "name": "srcLink",
+          "type": 9
+        },
+        {
+          "id": "6:5959262128590980146",
+          "name": "reviewLink",
+          "type": 9
+        },
+        {
+          "id": "7:6865843561512030498",
+          "name": "state",
+          "type": 9
+        },
+        {
+          "id": "8:4873807220167246820",
+          "name": "kind",
+          "type": 9
+        },
+        {
+          "id": "9:388645254597586452",
+          "name": "myStarCount",
+          "type": 6
+        },
+        {
+          "id": "10:8924766127320584549",
+          "name": "starCount",
+          "type": 6
+        },
+        {
+          "id": "11:5968201371233910265",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "12:7751691272071129293",
+          "name": "updatedAt",
+          "type": 10
+        },
+        {
+          "id": "13:8816888996022932593",
+          "name": "authorId",
+          "indexId": "12:594326089344902940",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CreatorDataModel"
+        },
+        {
+          "id": "14:1285703126122845730",
+          "name": "categoryId",
+          "indexId": "13:5244514079228160144",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "CategoryDataModel"
+        },
+        {
+          "id": "15:7244409427896391841",
+          "name": "tagId",
+          "indexId": "14:8341239411223296513",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "TagDataModel"
+        }
+      ],
+      "relations": [
+        {
+          "id": "7:8938418616669260303",
+          "name": "seasons",
+          "targetId": "11:908369626461378473"
+        },
+        {
+          "id": "8:2039573190397485539",
+          "name": "episodes",
+          "targetId": "11:908369626461378473"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "11:908369626461378473",
+  "lastIndexId": "14:8341239411223296513",
+  "lastRelationId": "8:2039573190397485539",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    2044285761471285534,
+    6224410449028813634
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    3498658896946705679,
+    1954070924638462855,
+    8661280354965377807,
+    8767297579622262511,
+    379286010199157575,
+    6083760043070518001,
+    5658988105738898346,
+    4982674673124835189,
+    3116576052399373056,
+    6821201640273568453,
+    9216200932509814536,
+    7962431734031239225,
+    7967438194914752966,
+    7428050321913237974,
+    8615475513764022440,
+    4035360786061675499,
+    7255762665248923000,
+    3992501871832894829,
+    3864863310251401956,
+    6163917219428685748,
+    6635609490872363580,
+    1960496101390936671
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

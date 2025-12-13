@@ -1,7 +1,17 @@
+import 'package:contentora/utility/globalDataModel.dart';
+import 'package:contentora/utility/objectBox.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+late ObjectBox objectbox;
 
-void main() {
-  runApp(const MyApp());
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  objectbox = await ObjectBox.create();
+  runApp(
+      ChangeNotifierProvider(
+        create: (_) => GlobalDataModel(),
+        child: const MyApp(),
+      ));
 }
 
 class MyApp extends StatelessWidget {
